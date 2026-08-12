@@ -49,6 +49,6 @@ environment:
 И обновив `telegram_bot.py` для чтения из переменной окружения:
 ```python
 import os
-BOT_TOKEN = os.getenv('BOT_TOKEN', '8576051092:AAG0f8AXbcCS83NWOWVWpyuY8hv9pOlrgrE')
+BOT_TOKEN = os.getenv('BOT_TOKEN', '0000000:0000000000000')
 ```
 
