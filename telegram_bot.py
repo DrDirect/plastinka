@@ -22,7 +22,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # Токен бота
-BOT_TOKEN = "8576051092:AAG0f8AXbcCS83NWOWVWpyuY8hv9pOlrgrE"
+BOT_TOKEN = ""
 
 # Настройка логирования
 logging.basicConfig(
