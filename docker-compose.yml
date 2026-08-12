@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: plastinka-bot
+    restart: unless-stopped
+    volumes:
+      # Монтируем base.png (если нужно обновлять без пересборки)
+      - ./base.png:/app/base.png:ro
+    environment:
+      # Токен бота можно передать через переменную окружения
+      # Или оставить в коде (как сейчас)
+      - PYTHONUNBUFFERED=1
+    # Логирование
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
